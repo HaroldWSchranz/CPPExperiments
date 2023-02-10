@@ -45,7 +45,7 @@ public:
 	CookingYouTubeChannel(string name, string ownerName) : YouTubeChannel(name, ownerName) {
 
 	}
-	void Practice() {
+	void Practice() {   // OwnerName is passed to differentiate Practice; and OwnerName is accessible in protected:
 		cout << OwnerName << " is practising cooking, learning new recipes, experimenting with spices, ..." << endl;
 	}
 };
@@ -64,6 +64,7 @@ int main()
 	cookingytChannel.GetInfo();
 	cookingytChannel.Practice();
 	cookingytChannel2.Practice();
+	//cookingytChannel2.
 
 	cout << endl;
 	cout << endl;
@@ -72,6 +73,7 @@ int main()
 	ytChannel.PublishVideo("C++ for beginners");
 	ytChannel.PublishVideo("HTML & CSS for beginners");
 	ytChannel.PublishVideo("C++ OOP");
+	//ytChannel. 
 
 	ytChannel.Unsubscribe();
 	for (int i = 1; i <= 215000; i++) {
