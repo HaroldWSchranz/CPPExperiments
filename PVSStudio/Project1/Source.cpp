@@ -10,7 +10,7 @@ void myFunction() {
 	// https://rules.sonarsource.com/cpp/RSPEC-5025
 	delete [] ptr;
 	ptr = nullptr;
- }
+}
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
 	cout << "PVS Studio!" << endl;
 	cout << endl;
 
-	int savedMoney[5] = { 100,200,300,400,500 };
+	int savedMoney[4] = { 100,200,300,400};
 
 	int total = 0;
 	for (int i = 0; i < 5; i++)
